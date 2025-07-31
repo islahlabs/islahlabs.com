@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Islah Labs
+
+A clean, professional website for Islah Labs - a company that builds purposeful, AI-powered tools to help people live, work, and learn better.
+
+## About
+
+Islah Labs is committed to developing thoughtful software rooted in purpose and integrity. We focus on:
+
+- **AI-augmented applications** that improve productivity and clarity
+- **Job seeker empowerment** with personalized resume and cover letter tools
+- **Learning enhancement** through deep engagement with reading and study material
+- **Social responsibility** and standing for human dignity
+
+## Projects
+
+- **ResumeMD** – AI Resume Tailoring with Markdown
+- **[Unnamed App]** – PDF-powered AI study guides and visual aids (coming soon)
+- *More coming soon...*
+
+## Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Package Manager**: pnpm
+- **Deployment**: Ready for Vercel deployment
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd islahlabs.com
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── about-islah/     # About Islah page
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Homepage
+└── components/
+    └── Footer.tsx       # Reusable footer component
+```
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **SEO Optimized**: Next.js App Router with proper meta tags
+- **Accessibility**: Semantic HTML and proper ARIA labels
+- **Performance**: Optimized images and fonts
+- **Maintainable**: Component-based architecture
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Values & Mission
+
+Our name "Islah" (إصلاح) comes from Arabic, meaning reformation, rectification, or the act of making something better, more righteous, or more functional. This reflects our commitment to:
+
+- **Positive transformation** - both internal and external
+- **Deep ethical principles** - rooted in purpose and integrity  
+- **Practical solutions** - tools that genuinely improve lives
+
+## Contact
+
+- **Email**: contact@islahlabs.com
+- **Website**: [islahlabs.com](https://islahlabs.com)
+
+## License
+
+© 2025 Islah Labs LLC. All rights reserved.

@@ -1,103 +1,78 @@
-import Image from "next/image";
+// A clean, professional landing page for Islah Labs using Next.js + TypeScript
+// Tailored to express your values: AI + utility, purpose, simplicity
+
+import Footer from '../components/Footer';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-white text-gray-800 px-6 py-12 font-sans">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4">Islah Labs</h1>
+        <p className="text-lg text-gray-600 mb-8">
+          We build purposeful, AI-powered tools to help people live, work, and learn better.
+        </p>
+        <p className="text-sm text-gray-500 mb-8">
+          <Link href="/about-islah" className="text-blue-600 hover:text-blue-800 underline">Learn about the meaning of &ldquo;Islah&rdquo; →</Link>
+        </p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="grid gap-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">What We Do</h2>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Build AI-augmented apps that improve productivity and clarity</li>
+              <li>Empower job seekers with personalized resume and cover letter tools</li>
+              <li>Help learners engage deeply with reading and study material</li>
+              <li>Develop thoughtful software rooted in purpose and integrity</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">Projects</h2>
+            <ul className="list-disc list-inside text-gray-700">
+              <li><strong>ResumeMD</strong> – AI Resume Tailoring with Markdown</li>
+              <li><strong>[Unnamed App]</strong> – PDF-powered AI study guides and visual aids (coming soon)</li>
+              <li><em>More coming soon...</em></li>
+            </ul>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="mt-12 border-t pt-6">
+          <h2 className="text-2xl font-semibold mb-4 text-red-700">Standing with Palestine: A Moral Responsibility</h2>
+                      <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+              <p className="text-gray-800 mb-4 leading-relaxed">
+                We unequivocally denounce the ongoing holocaust in Gaza and the systematic violence against Palestinians in Gaza, the West Bank, and throughout occupied Palestine. The targeting of civilians, destruction of homes, farms, hospitals, and schools, and the humanitarian crisis unfolding before our eyes demand immediate action and accountability.
+              </p>
+              <p className="text-gray-800 mb-4 leading-relaxed">
+                As the Qur&apos;an teaches us: &ldquo;Whoever kills an innocent person, it is as if they have killed all of humanity. And whoever saves a life, it is as if they have saved all of humanity&rdquo; (5:32). Whether this is classified as genocide or not is beside the point. The fact remains that countless innocent civilians and non-combatants have been killed, and that is never acceptable, regardless of where they are or who they are.
+              </p>
+              <p className="text-gray-800 mb-4 leading-relaxed">
+                The evil and inhumane use of food as a weapon to cause mass starvation of an entire population is a crime against humanity. The deliberate blocking of humanitarian aid, destruction of agricultural infrastructure, and prevention of basic necessities from reaching civilians in Gaza represents a calculated strategy of collective punishment. The governments of the United States and Israel bear direct responsibility for not putting an end to this barbaric practice and for actively enabling the conditions that make it possible.
+              </p>
+              <p className="text-gray-800 mb-4 leading-relaxed">
+                As a company committed to purpose and human dignity, we stand in solidarity with the Palestinian people and their right to self-determination, freedom, and justice. We call for an immediate ceasefire, unrestricted humanitarian aid, and an end to the oppressive occupation.
+              </p>
+            <div className="mt-4">
+              <h3 className="font-semibold text-gray-800 mb-2">How to Help:</h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-1">
+                <li>Support humanitarian organizations providing aid to Gaza</li>
+                <li>Contact your representatives to demand action</li>
+                <li>Educate yourself and others about the history and current reality</li>
+                <li>Amplify Palestinian voices and stories</li>
+                <li>Support Palestinian-owned businesses and organizations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t pt-6">
+          <h2 className="text-xl font-semibold mb-2">Get in Touch</h2>
+          <p className="text-gray-600 mb-2">Interested in collaborating, consulting, or just checking in?</p>
+          <p className="text-blue-600">contact@islahlabs.com</p>
+        </div>
+      </div>
+
+      <Footer />
+    </main>
   );
 }
