@@ -1,5 +1,11 @@
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Islah - The Meaning Behind Our Name | Islah Labs',
+  description: 'Learn about the meaning of "Islah" (إصلاح) - reformation, rectification, and the act of making things better. Discover the Qur\'anic roots and ethical principles behind our company name.',
+};
 
 export default function AboutIslah() {
   return (
